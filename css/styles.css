@@ -551,9 +551,40 @@ address {
     display: inline-block;
 }
 
+.card-thumb {
+    display: flex;
+    position: relative;
+}
+
+.card-thumb::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+}
+
+.card-discr {
+    position: absolute;
+    min-width: 322px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--white-color-text);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .portfolio-card-link:hover,
 .portfolio-card-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card-link:hover .card-thumb::before,
+.portfolio-card-link:focus .card-thumb::before {
+    opacity: 1;
 }
 
 .portfolio-list .title {
