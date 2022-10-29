@@ -448,11 +448,12 @@ address {
 }
 
 .team-list .text {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 16px;
+    
 }
 
 /* .socials-list and .socials-item create added above */
@@ -508,6 +509,41 @@ address {
 .logo-link:focus .logo-icon {
     fill: var(--accent-color);
 }
+
+/* modal-window */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--main-color-bg); 
+}
+
+.close-btn {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+
 
 
 /* portfolio.html css */
@@ -567,14 +603,14 @@ address {
 
 .card-discr {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 322px;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
     color: var(--white-color-text);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .portfolio-card-link:hover,
