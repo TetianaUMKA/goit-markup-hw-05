@@ -154,7 +154,7 @@ button {
 
 .link.current::after {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     content: "";
     min-width: 100%;
@@ -586,6 +586,7 @@ address {
     align-items: center;
     width: 30px;
     height: 30px;
+    background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
