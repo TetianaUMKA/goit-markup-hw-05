@@ -392,7 +392,6 @@ img {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer-left-side-wrapper {
@@ -462,6 +461,10 @@ img {
   width: 24px;
   height: 24px;
   fill: #f4f4fd;
+}
+
+.footer-form-wrapper {
+  margin-left: auto;
 }
 
 .footer-form-text {
