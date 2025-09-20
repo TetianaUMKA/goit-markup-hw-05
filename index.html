@@ -527,19 +527,21 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div>
+          <div class="modal-checkbox-wrapper">
             <input
-              class="modal-checkbox-input"
+              class="modal-checkbox-input visually-hidden"
               type="checkbox"
               name="agreement"
               id="agreement"
             />
             <label class="modal-checkbox-label" for="agreement"
-              >I accept the terms and conditions of the<a href="#">
-                Privacy Policy</a
-              ><span class="modal-custom-checkbox"
-                ><svg class="modal-checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-tick"></use></svg></span
+              ><a class="modal-checkbox-link" href="#"> Privacy Policy</a>I
+              accept the terms and conditions of the<span
+                class="modal-custom-checkbox"
+              >
+                <svg class="modal-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-tick"></use>
+                </svg> </span
             ></label>
           </div>
           <button class="button modal-button" type="submit">Send</button>
