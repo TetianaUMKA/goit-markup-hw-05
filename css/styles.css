@@ -390,7 +390,7 @@ img {
   background-color: #2e2f42;
 }
 
-.footer-container {
+.footer > .container {
   display: flex;
 }
 
