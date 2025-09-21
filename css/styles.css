@@ -535,13 +535,16 @@ img {
   align-items: center;
   z-index: 100;
 
-  opacity: 0;
+  /* opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .is-open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
@@ -569,6 +572,7 @@ img {
   align-items: center;
   margin-left: auto;
   margin-bottom: 16px;
+  padding: 0;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
@@ -590,8 +594,8 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
+.modal-close-button:hover > .modal-close-icon,
+.modal-close-button:focus > .modal-close-icon {
   fill: #fff;
 }
 
@@ -614,7 +618,7 @@ img {
 
 .modal-input-label {
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
